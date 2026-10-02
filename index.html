@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free advanced QR code generator with 45+ QR templates and 20 designs.">
+  <title>QRGen Pro – Advanced QR Code Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#home"><span class="brand-icon"><i class="fa-solid fa-qrcode"></i></span> QR<span>Gen</span><small>PRO</small></a>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#generator">Generator</a><a href="#designs">Designs</a><a href="#features">Features</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <button class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+
+
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow"><i class="fa-solid fa-wand-magic-sparkles"></i> 45+ QR templates · 20 design presets</div>
+      <h1>Create stunning<br><span>QR codes instantly.</span></h1>
+      <p>Make QR codes for websites, payments, Wi-Fi, social profiles, business cards, events and more. Customize the look and download your code.</p>
+      <a class="btn primary" href="#generator"><i class="fa-solid fa-qrcode"></i> Start creating</a>
+      <div class="hero-points"><span><i class="fa-solid fa-check"></i> No account needed</span><span><i class="fa-solid fa-check"></i> Browser-based</span><span><i class="fa-solid fa-check"></i> PNG & SVG</span></div>
+    </div>
+    <div class="hero-art"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="hero-qr"><i class="fa-solid fa-qrcode"></i><b>SCAN ME</b></div><span class="float-tag tag-a"><i class="fa-solid fa-wifi"></i> Wi-Fi</span><span class="float-tag tag-b"><i class="fa-brands fa-whatsapp"></i> WhatsApp</span></div>
+  </div>
+</section>
+
+
+
+
+
+<section class="generator-section section" id="generator">
+  <div class="container">
+    <div class="section-heading"><span class="eyebrow">QR CODE STUDIO</span><h2>Build your QR code</h2><p>Choose a template, fill in its details, pick a design and generate.</p></div>
+    <div class="studio">
+      <div class="panel editor-panel">
+        <div class="panel-title"><div><span class="step">01</span><h3>Choose QR type</h3></div><span class="muted tiny">45+ templates</span></div>
+        <label class="field-label" for="qrType">QR template</label>
+        <select id="qrType" class="control">
+          <optgroup label="Basic">
+            <option value="url">Website URL</option><option value="text">Plain text</option><option value="phone">Phone call</option><option value="sms">SMS message</option><option value="email">Email</option><option value="wifi">Wi-Fi network</option><option value="vcard">Contact / vCard</option><option value="location">Location / Google Maps</option>
+          </optgroup>
+          <optgroup label="Messaging & social">
+            <option value="whatsapp">WhatsApp chat</option><option value="whatsappmsg">WhatsApp with message</option><option value="telegram">Telegram</option><option value="instagram">Instagram</option><option value="facebook">Facebook</option><option value="linkedin">LinkedIn</option><option value="x">X / Twitter</option><option value="tiktok">TikTok</option><option value="youtube">YouTube</option><option value="spotify">Spotify</option><option value="github">GitHub</option><option value="pinterest">Pinterest</option><option value="snapchat">Snapchat</option><option value="threads">Threads</option><option value="discord">Discord invite</option><option value="skype">Skype</option><option value="messenger">Facebook Messenger</option><option value="reddit">Reddit</option><option value="twitch">Twitch</option>
+          </optgroup>
+          <optgroup label="Payments & crypto">
+            <option value="upi">UPI payment</option><option value="bitcoin">Bitcoin address</option><option value="ethereum">Ethereum address</option><option value="crypto">Other crypto address</option>
+          </optgroup>
+          <optgroup label="Business & marketing">
+            <option value="review">Google review</option><option value="menu">Restaurant menu</option><option value="product">Product page</option><option value="coupon">Coupon / offer</option><option value="business">Business information</option><option value="profile">Professional profile</option><option value="multilink">Multi-link landing page</option><option value="app">App download</option><option value="appstore">Apple App Store</option><option value="playstore">Google Play Store</option><option value="pdf">PDF / document link</option><option value="image">Image link</option><option value="websiteSocial">Website + social links</option>
+          </optgroup>
+          <optgroup label="Personal, events & utility">
+            <option value="event">Event details</option><option value="calendar">Calendar event</option><option value="ticket">Ticket / booking link</option><option value="emergency">Emergency contact</option><option value="education">Education information</option><option value="custom">Custom URL / data</option>
+          </optgroup>
+        </select>
+
+        <div class="panel-title section-divider"><div><span class="step">02</span><h3>Enter information</h3></div></div>
+        <div id="fields" class="dynamic-fields" aria-live="polite"></div>
+
+        <div class="panel-title section-divider"><div><span class="step">03</span><h3>Customize design</h3></div></div>
+        <label class="field-label" for="designPreset">Choose a QR design</label>
+        <select id="designPreset" class="control">
+          <option value="classic">01 · Classic Black</option><option value="rounded">02 · Soft Rounded</option><option value="dots">03 · Dot Matrix</option><option value="classy">04 · Classy</option><option value="classyRounded">05 · Classy Rounded</option>
+          <option value="ocean">06 · Ocean Gradient</option><option value="sunset">07 · Sunset Gradient</option><option value="purple">08 · Purple Dream</option><option value="forest">09 · Forest Green</option><option value="ruby">10 · Ruby Red</option>
+          <option value="midnight">11 · Midnight</option><option value="neon">12 · Neon Green</option><option value="gold">13 · Luxury Gold</option><option value="rose">14 · Rose Pink</option><option value="sky">15 · Sky Blue</option>
+          <option value="minimal">16 · Minimal Grey</option><option value="coffee">17 · Coffee Brown</option><option value="candy">18 · Candy Mix</option><option value="mono">19 · Monochrome</option><option value="brand">20 · Brand Indigo</option>
+        </select>
+        <div class="design-preview-row" id="designSwatches"></div>
+
+        <div class="two-col">
+          <div><label class="field-label" for="dotStyle">QR pattern</label><select id="dotStyle" class="control"><option value="preset">Use design preset</option><option value="square">Square</option><option value="dots">Dots</option><option value="rounded">Rounded</option><option value="classy">Classy</option><option value="classy-rounded">Classy rounded</option></select></div>
+          <div><label class="field-label" for="cornerStyle">Corner shape</label><select id="cornerStyle" class="control"><option value="preset">Use design preset</option><option value="square">Square</option><option value="dot">Circle</option><option value="extra-rounded">Extra rounded</option></select></div>
+        </div>
+
+        <div class="two-col color-fields">
+          <div><label class="field-label" for="dotColor">QR color</label><div class="color-control"><input type="color" id="dotColor" value="#111827"><span id="dotColorText">#111827</span></div></div>
+          <div><label class="field-label" for="bgColor">Background</label><div class="color-control"><input type="color" id="bgColor" value="#ffffff"><span id="bgColorText">#ffffff</span></div></div>
+        </div>
+        <label class="check-line"><input type="checkbox" id="useGradient"> Use gradient colors</label>
+        <div class="two-col" id="gradientFields" hidden>
+          <div><label class="field-label" for="gradient1">Gradient start</label><input class="control color-input" type="color" id="gradient1" value="#6366f1"></div>
+          <div><label class="field-label" for="gradient2">Gradient end</label><input class="control color-input" type="color" id="gradient2" value="#06b6d4"></div>
+        </div>
+        <div class="two-col">
+          <div><label class="field-label" for="qrSize">Size <b id="sizeText">320 px</b></label><input class="range" type="range" id="qrSize" min="180" max="800" step="20" value="320"></div>
+          <div><label class="field-label" for="qrMargin">Quiet zone <b id="marginText">12 px</b></label><input class="range" type="range" id="qrMargin" min="0" max="40" value="12"></div>
+        </div>
+        <div class="two-col">
+          <div><label class="field-label" for="errorLevel">Error correction</label><select class="control" id="errorLevel"><option value="L">Low (7%)</option><option value="M">Medium (15%)</option><option value="Q">Quartile (25%)</option><option value="H" selected>High (30%)</option></select></div>
+          <div><label class="field-label" for="fileFormat">Download format</label><select class="control" id="fileFormat"><option value="png">PNG image</option><option value="svg">SVG vector</option></select></div>
+        </div>
+
+        <div class="logo-tools">
+          <label class="field-label" for="logoUpload">Center logo (optional)</label>
+          <input class="control file-control" type="file" id="logoUpload" accept="image/png,image/jpeg,image/webp,image/svg+xml">
+          <div class="two-col">
+            <div><label class="field-label" for="logoSize">Logo size <b id="logoSizeText">22%</b></label><input class="range" type="range" id="logoSize" min="10" max="35" value="22"></div>
+            <label class="check-line logo-remove"><input type="checkbox" id="removeLogo"> Remove logo</label>
+          </div>
+          <p class="hint">Use a small logo and keep error correction on High. Always test-scan your QR code.</p>
+        </div>
+
+        <div class="frame-tools">
+          <label class="field-label" for="frameStyle">QR frame</label>
+          <select class="control" id="frameStyle"><option value="none">No frame</option><option value="scan">Scan me</option><option value="border">Simple border</option><option value="rounded">Rounded card</option><option value="dark">Dark label</option></select>
+          <label class="field-label" for="frameText">Frame text</label><input class="control" id="frameText" maxlength="32" value="SCAN ME">
+        </div>
+        <button class="btn primary full" id="generateBtn"><i class="fa-solid fa-wand-magic-sparkles"></i> Generate QR code</button>
+      </div>
+
+      <aside class="panel preview-panel">
+        <div class="preview-heading"><div><span class="step">LIVE PREVIEW</span><h3>Your QR code</h3></div><span class="status" id="status">Waiting</span></div>
+        <div class="qr-stage" id="qrStage"><div class="placeholder"><i class="fa-solid fa-qrcode"></i><p>Your QR preview will appear here</p></div></div>
+        <div class="preview-meta"><span id="previewType">No QR generated</span><span id="previewSize">320 × 320</span></div>
+        <div class="action-grid">
+          <button class="btn primary" id="downloadBtn" disabled><i class="fa-solid fa-download"></i> Download</button>
+          <button class="btn secondary" id="copyDataBtn" disabled><i class="fa-regular fa-copy"></i> Copy data</button>
+          <button class="btn secondary" id="copyImageBtn" disabled><i class="fa-regular fa-image"></i> Copy QR image</button>
+          <button class="btn secondary" id="printBtn" disabled><i class="fa-solid fa-print"></i> Print</button>
+        </div>
+        <div class="privacy-note"><i class="fa-solid fa-shield-halved"></i><span>QR content is generated in your browser. Avoid encoding confidential information: anyone who scans the code may read it.</span></div>
+        <div class="tips"><h4><i class="fa-solid fa-lightbulb"></i> Quick tips</h4><ul><li>Use strong contrast between QR and background.</li><li>Keep a clear margin around the code.</li><li>Test the downloaded QR with a phone camera.</li><li>Some scanners may not support every specialized data format.</li></ul></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section designs-section" id="designs">
+  <div class="container"><div class="section-heading"><span class="eyebrow">MAKE IT YOURS</span><h2>20 ready-made styles</h2><p>Choose a preset in the generator and adjust its colors and pattern.</p></div>
+    <div class="preset-gallery" id="presetGallery"></div>
+  </div>
+</section>
+
+
+
+<section class="section features-section" id="features">
+  <div class="container"><div class="section-heading"><span class="eyebrow">MADE FOR EVERYDAY USE</span><h2>One tool, many possibilities</h2></div>
+    <div class="feature-grid">
+      <article class="feature-card"><i class="fa-solid fa-layer-group"></i><h3>45+ templates</h3><p>Social, business, payment, contact, event and utility templates.</p></article>
+      <article class="feature-card"><i class="fa-solid fa-palette"></i><h3>Custom designs</h3><p>20 presets, dot patterns, corner shapes and gradient colors.</p></article>
+      <article class="feature-card"><i class="fa-solid fa-image"></i><h3>Logo support</h3><p>Add a center logo and adjust its size.</p></article>
+      <article class="feature-card"><i class="fa-solid fa-file-arrow-down"></i><h3>PNG & SVG</h3><p>Download raster PNG or scalable SVG artwork.</p></article>
+      <article class="feature-card"><i class="fa-solid fa-mobile-screen"></i><h3>Responsive</h3><p>Works on desktop, tablet and mobile browsers.</p></article>
+      <article class="feature-card"><i class="fa-solid fa-lock"></i><h3>Browser-based</h3><p>No account or server storage is required for QR creation.</p></article>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <a class="brand" href="#home">
+      <span class="brand-icon">
+        <i class="fa-solid fa-qrcode"></i>
+      </span> QR<span>Gen</span>
+      <small>PRO</small></a>
+      <p>Free QR code creation in your browser.</p>
+      <span>© <b id="year"></b> QRGen. All rights reserved.</span>
+    
+    
+    </div></footer>
+
+
+    
+<div class="toast" id="toast" role="status" aria-live="polite"><i class="fa-solid fa-circle-check"></i><div><b id="toastTitle">Done</b><p id="toastMessage">Your action was completed.</p></div><button id="toastClose" aria-label="Close notification"><i class="fa-solid fa-xmark"></i></button></div>
+
+<script src="https://unpkg.com/qr-code-styling@1.9.2/lib/qr-code-styling.js"></script>
+<script>
+  // Fallback CDN in case unpkg is unavailable.
+  if (typeof QRCodeStyling === "undefined") {
+    var qrFallback = document.createElement("script");
+    qrFallback.src = "https://cdn.jsdelivr.net/npm/qr-code-styling@1.9.2/lib/qr-code-styling.js";
+    document.head.appendChild(qrFallback);
+  }
+</script>
+<script src="script.js"></script>
+</body>
+</html>
